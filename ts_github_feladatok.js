@@ -117,7 +117,7 @@ function ermeFeldobasKiir() {
 // Paraméterek(ek): email:szöveg tipus
 // Visszatérési értéke: logikai
 function emailCimGoogleEldont(email) {
-    var pattern = /^[a-zA-Z0-9._]+\@gmail.com$/; //^a kifejezés vége, regEx
+    var pattern = /^[a-zA-Z0-9._]+\@gmail\.com$/; //^a kifejezés vége, regEx
     return pattern.test(email);
 }
 function emailCimGoogleEldontKiir() {
