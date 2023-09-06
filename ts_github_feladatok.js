@@ -11,7 +11,7 @@ function massalHangzokSzamaMegallapit(vizsgaltSzoveg) {
     var db = 0;
     var maganHangzok = ["e", "u", "i", "o", "a"]; //ami nem mgh, azt vizsg.
     for (var i = 0; i < vizsgaltSzoveg.length; i++) {
-        if (maganHangzok.indexOf(vizsgaltSzoveg.charAt(i).toLowerCase()) == -1) { // charAt helyett vizsgaltSzoveg[i] is jó
+        if (maganHangzok.indexOf(vizsgaltSzoveg.charAt(i).toLowerCase()) != -1) { // charAt helyett vizsgaltSzoveg[i] is jó
             db++;
         }
     }
