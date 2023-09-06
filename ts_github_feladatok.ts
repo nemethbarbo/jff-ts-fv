@@ -14,7 +14,7 @@ function massalHangzokSzamaMegallapit(vizsgaltSzoveg:string):number{
     let db:number = 0;
     const maganHangzok:Array<string> = ["e","u","i","o","a"];   //ami nem mgh, azt vizsg.
     for (let i = 0; i < vizsgaltSzoveg.length; i++) {
-        if (maganHangzok.indexOf(vizsgaltSzoveg.charAt(i).toLowerCase()) == -1){   // charAt helyett vizsgaltSzoveg[i] is jó
+        if (maganHangzok.indexOf(vizsgaltSzoveg.charAt(i).toLowerCase()) != -1){   // charAt helyett vizsgaltSzoveg[i] is jó
             db++;
         }
     }
